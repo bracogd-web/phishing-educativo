@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Cuenta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+            width: 300px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Verifica tu identidad</h2>
+        <form onsubmit="showMessage(); return false;">
+            <input type="email" placeholder="Correo institucional" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Verificar</button>
+        </form>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("🔐 Esta fue una simulación educativa de phishing.\n\nNunca ingreses tus credenciales en sitios sospechosos.\n¡Gracias por participar!");
+        }
+    </script>
+</body>
+</html>
